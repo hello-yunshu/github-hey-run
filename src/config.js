@@ -24,7 +24,7 @@ export const REPOSITORIES = Object.freeze({
 
   "mira-mouse-plugins": {
     git: true,
-    release: false,
+    release: true,
     archive: true,
     raw: true,
   },
