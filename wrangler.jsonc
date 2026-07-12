@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "github-hey-run",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-12",
+
+  // 只允许正式域名访问，关闭默认 workers.dev 和预览地址。
+  "workers_dev": false,
+  "preview_urls": false,
+
+  "routes": [
+    {
+      "pattern": "github.hey.run",
+      "custom_domain": true
+    }
+  ],
+
+  "observability": {
+    "enabled": true
+  }
+}
