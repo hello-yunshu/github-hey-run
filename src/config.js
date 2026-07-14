@@ -84,6 +84,13 @@ export const REPOSITORIES = Object.freeze({
     archive: true,
     raw: true,
   },
+
+  "rill-ml": {
+    git: true,
+    release: true,
+    archive: true,
+    raw: true,
+  },
 });
 
 export const CACHE_TTL = Object.freeze({
