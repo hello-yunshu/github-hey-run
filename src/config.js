@@ -91,6 +91,14 @@ export const REPOSITORIES = Object.freeze({
     archive: true,
     raw: true,
   },
+
+  // 仅用于代理 Release 资产（广告规则集 mrs），不开放源码包与 raw
+  "selfuse": {
+    git: false,
+    release: true,
+    archive: false,
+    raw: false,
+  },
 });
 
 export const CACHE_TTL = Object.freeze({
